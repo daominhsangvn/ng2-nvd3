@@ -1,5 +1,5 @@
 {
-  "name": "ng2-nvd3",
+  "name": "@nois/ng2-nvd3",
   "version": "1.1.3",
   "description": "Angular2 component for NVD3.js reusable charting library",
   "keywords": [
@@ -18,13 +18,12 @@
     "pretest": "npm run build",
     "test": "karma start karma.conf.js",
     "build": "rimraf build && tsc",
-    "build:aot": "rimraf build && ngc -p tsconfig-aot.json",
-    "prepublish": "typings install && npm run build"
+    "build:aot": "rimraf build && ngc -p tsconfig-aot.json"
   },
   "author": "Konstantin Skipor",
   "repository": {
     "type": "git",
-    "url": "https://github.com/krispo/ng2-nvd3.git"
+    "url": "git+https://github.com/krispo/ng2-nvd3.git"
   },
   "devDependencies": {
     "es6-promise": "^3.0",
@@ -47,5 +46,12 @@
   "dependencies": {
     "d3": "^3.5.15",
     "nvd3": "^1.8.2"
+  },
+  "bugs": {
+    "url": "https://github.com/krispo/ng2-nvd3/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }
